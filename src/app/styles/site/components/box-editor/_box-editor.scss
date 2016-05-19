@@ -1,0 +1,32 @@
+
+.wdpred__box-editor-wrapper {
+
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  width: 300px;
+  height: 260px;
+  z-index: 10000;
+
+  transform: translateX(-(300px + 216px));
+
+  &::before {
+    @include box-shadow-multiple(0 0 20px rgba(0,0,0,0.2));
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+  }
+
+}
+
+.wdpred__box-editor {
+  @include border-radius(5px);
+
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
