@@ -1,0 +1,40 @@
+.suggestions {
+  @extend .clearfix;
+  padding-top: 2px;
+
+  > li {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .block-wrapper {
+    @include border-radius(2px);
+    @include transition(transform 350ms cubic-bezier(.71,2,.52,.48));
+    cursor: pointer;
+    padding: 10px;
+
+    &.dndDragging,
+    &:hover {
+      @include box-shadow-multiple(0 0 1px rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.05));
+    }
+
+    &.dndDragging,
+    &:active {
+      background-color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    &.dndDraggingSource {
+      transform: scale(1);
+      background: none;
+      box-shadow: none;
+      opacity: 0.5;
+    }
+
+    .block {
+      cursor: inherit;
+    }
+
+  }
+
+}

@@ -1,0 +1,78 @@
+
+$general-padding: 40px;
+$sidebar-width: 280px;
+
+.workshop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.workshop-top {
+  @extend .clearfix;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: $general-padding;
+  display: flex;
+}
+
+  .workshop-side {
+    @extend .clearfix;
+    flex: 0 0 650px;
+    height: 100%;
+    margin-right: $general-padding;
+  }
+
+    .workshop-side__inner {
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+    }
+
+    .workshop-side__halves {
+      display: flex;
+      width: 100%;
+      //margin-top: $general-padding;
+      flex: 1;
+    }
+
+    .workshop-filters {
+      flex: 0 0 320px;
+      height: 100%;
+      margin-right: $general-padding;
+      width: 240px;
+
+      .box-wrapper {
+        margin-top: $general-padding / 2;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+      }
+
+    }
+
+    .workshop-results {
+      flex-grow: 1;
+      position: relative;
+    }
+
+  .workshop-main {
+    flex-grow: 1;
+    height: 100%;
+  }
+
+.workshop-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 160px;
+  padding: 0 $general-padding $general-padding $general-padding;
+}
