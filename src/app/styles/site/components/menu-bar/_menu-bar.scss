@@ -1,0 +1,11 @@
+.wdpred__menu-bar {
+  height: 58px;
+  padding: 20px;
+  background-color: #{map_get($colours, dark)};
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: #{map_get($zindex, menuBar)};
+}

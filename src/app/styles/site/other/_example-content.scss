@@ -1,0 +1,79 @@
+.wdpred__header-example {
+  height: 700px;
+  background-image: url(/assets/images/placeholder/photographer_cropped.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wdpred__content {
+    width: 410px;
+    text-align: right;
+
+    position: relative;
+
+    &::after {
+      @include box-shadow-multiple(0 0 0 2000px rgba(0,0,0,0.15));
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #1200FF;
+      outline: #1200FF solid 1px;
+      z-index: #{map_get($zindex, selectedShadow)};
+    }
+
+  }
+
+  .wdpred__title,
+  .wdpred__subtitle {
+    @extend %font--heading;
+  }
+
+  .wdpred__title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #FFF;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.14), 0 1px rgba(0, 0, 0, 0.14);
+  }
+
+  .wdpred__subtitle {
+    color: rgba(0, 0, 0, 0.16);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .wdpred__link {
+    @extend %font--heading;
+    @include border-radius(30px);
+    background-color: #ff0053;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+  }
+
+}
+
+.wdpred__section-example {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wdpred__content {
+    width: 810px;
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+  }
+
+}

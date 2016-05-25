@@ -1,32 +1,41 @@
-<div class="container">
-
-  <div>
-    <acme-navbar creation-date="main.creationDate"></acme-navbar>
-  </div>
-
-  <div class="jumbotron">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
-      <a class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</a>
-    </p>
-    <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-    </p>
-  </div>
-
-  <div class="col" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-    <div class="thumbnail">
-      <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-      <div class="caption">
-        <h3>{{ awesomeThing.title }}</h3>
-        <p>{{ awesomeThing.description }}</p>
-        <p><a ng-href="{{ awesomeThing.url }}">{{ awesomeThing.url }}</a></p>
-      </div>
+<div class="page page--default">
+  <header class="wdpred__header-example">
+    <div class="wdpred__content">
+      <h1 class="wdpred__title">Hi my name is <strong>Sansa</strong></h1>
+      <h2 class="wdpred__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </h2>
+      <a href="" class="wdpred__link">Contact me</a>
+    </div>
+  </header>
+  <section class="wdpred__section-example">
+    <div class="wdpred__content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid architecto at blanditiis, cum.
+      </p>
+      <p>
+        Consequuntur corporis debitis deserunt eligendi et explicabo laudantium non numquam placeat quasi quidem repellat repudiandae soluta tempora velit.
+      </p>
+    </div>
+  </section>
+  <div class="wdpred__box-editor-wrapper">
+    <div class="wdpred__box-editor">
+      <header class="wdpred__box-editor__header">
+        <ul class="wdpred__box-editor__tabs">
+          <li class="wdpred__tab wdpred__state--selected">
+            <div>content</div>
+          </li>
+          <li class="wdpred__tab">
+            <div>layout</div>
+          </li>
+          <li class="wdpred__tab">
+            <div>styling</div>
+          </li>
+          <li class="wdpred__tab">
+            <div>extra</div>
+          </li>
+        </ul>
+      </header>
     </div>
   </div>
-
 </div>
