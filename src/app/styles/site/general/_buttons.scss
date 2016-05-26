@@ -12,6 +12,43 @@
 
 }
 
-.btn {
+.wdpred__btn {
   @extend %btn-reset;
+}
+
+.wdpred__btn--main-action {
+  color: #ff0053;
+  font-size: 15px;
+  padding: 11px 16px 11px 17px;
+  height: 58px; // height of menu-bar
+
+  &:hover {
+    @include background-gradient(map_get($colours, dark), #161d38);
+
+    .wdpred__icon {
+      transform: scale(1.1);
+    }
+
+  }
+
+  &:active {
+    @include background-gradient(#161d38, #161d38);
+  }
+
+  .wdpred__icon {
+    @include transition(transform 250ms ease);
+    @include border-radius(5px);
+    background-color: #ff0053;
+    color: #161c33;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 3px;
+  }
+
+  .wdpred__text {
+    font-size: 14px;
+    text-shadow: 0 1px #161c33;
+    //border-bottom: 1px solid #ff0053;
+  }
+
 }

@@ -1,0 +1,10 @@
+
+.icon-trash-empty:before { content: '\21'; } /* '!' */
+.icon-doc-inv:before { content: '\22'; } /* '&quot;' */
+.icon-ok:before { content: '\23'; } /* '#' */
+.icon-cancel:before { content: '\24'; } /* '$' */
+.icon-plus:before { content: '\25'; } /* '%' */
+.icon-minus:before { content: '\26'; } /* '&amp;' */
+.icon-floppy:before { content: '\27'; } /* ''' */
+.icon-floppy-1:before { content: '\28'; } /* '(' */
+.icon-trash:before { content: '\2e'; } /* '.' */

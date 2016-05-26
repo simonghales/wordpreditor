@@ -1,0 +1,30 @@
+.wdpred__box-editor__body {
+  padding: 20px 15px;
+}
+
+.wdpred__box-editor__option {
+  @extend .clearfix;
+
+  margin-top: 15px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+}
+
+  .wdpred__box-editor__option__label {
+    float: left;
+    min-width: 100px;
+    margin-right: 10px;
+
+    font-size: 13px;
+    position: relative;
+    top: 5px;
+  }
+
+  .wdpred__box-editor__option__value {
+    overflow: hidden;
+    color: #555555;
+    font-size: 13px;
+  }

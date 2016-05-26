@@ -9,3 +9,9 @@
   right: 0;
   z-index: #{map_get($zindex, menuBar)};
 }
+
+  .wdpred__menu-bar__save {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }

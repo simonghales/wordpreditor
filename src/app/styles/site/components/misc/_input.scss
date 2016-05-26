@@ -1,0 +1,32 @@
+
+%input-reset {
+  @extend %font--default;
+  border: 0;
+  font-size: 1em;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.wdpred__input {
+  @extend %input-reset;
+}
+
+.wdpred__input--basic {
+  font-weight: 700;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  padding: 4px;
+
+  &:focus {
+    border-color: #999999;
+  }
+
+  &[readonly] {
+    border-color: transparent;
+  }
+
+}
