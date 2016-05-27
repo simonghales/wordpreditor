@@ -52,3 +52,64 @@
   }
 
 }
+
+.wdpred__btn--medium {
+  @include border-radius(3px);
+  @include transition(transform 200ms ease, background-color 200ms ease, color 200ms ease);
+  background-color: #cccccc;
+  color: #ffffff;
+  padding: 6px 12px;
+  font-size: 15px;
+  position: relative;
+
+  &:hover {
+    background-color: #ff0053;
+    color: #ffffff;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+}
+
+.wdpred__btn--mini-save {
+  @include transition(transform 200ms ease);
+  padding: 3px 0;
+
+  &:hover {
+
+    .wdpred__icon {
+      background-color: #ff0053;
+    }
+
+    .wdpred__text {
+      color: #ff0053;
+    }
+
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  .wdpred__icon {
+    @include transition(transform 250ms ease, background-color 200ms ease, color 200ms ease);
+    @include border-radius(5px);
+    background-color: #cccccc;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 2px;
+    padding: 5px 3px;
+    font-size: 13px;
+  }
+
+  .wdpred__text {
+    @include transition(color 200ms ease);
+    color: #cccccc;
+    font-size: 13px;
+    position: relative;
+    top: 1px;
+  }
+
+}

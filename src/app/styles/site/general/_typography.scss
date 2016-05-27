@@ -20,3 +20,7 @@ body {
 strong {
   font-weight: 700;
 }
+
+a[ng-click] {
+  cursor: pointer;
+}
