@@ -1,6 +1,7 @@
 .wdpred__box-editor__body {
-  height: 200px;
+  height: 230px;
   padding: 15px 10px;
+  overflow-y: auto;
 }
 
 .wdpred__box-editor__option {
@@ -28,4 +29,9 @@
     overflow: hidden;
     color: #555555;
     font-size: 13px;
+
+    .wdpred__add-child {
+      margin: 5px 0 0 5px;
+    }
+
   }
