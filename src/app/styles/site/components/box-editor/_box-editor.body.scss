@@ -1,7 +1,38 @@
 .wdpred__box-editor__body {
-  height: 230px;
+  height: 280px;
   padding: 15px 10px;
   overflow-y: auto;
+}
+
+.wdpred__box-editor__option-container {
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+
+  &.wdpred__box-editor__option-container--two {
+    @extend .clearfix;
+
+    .wdpred__box-editor__option {
+      margin-top: 0;
+      width: 50%;
+      float: left;
+      padding-right: 10px;
+
+      &:last-of-type {
+        padding: 0 0 0 10px;
+      }
+
+    }
+
+      .wdpred__box-editor__option__label {
+        min-width: 66px;
+      }
+
+  }
+
 }
 
 .wdpred__box-editor__option {
@@ -23,6 +54,11 @@
     font-size: 13px;
     position: relative;
     top: 5px;
+
+    &.wdpred__box-editor__option__label--thinner {
+      min-width: 66px;
+    }
+
   }
 
   .wdpred__box-editor__option__value {
@@ -34,4 +70,20 @@
       margin: 5px 0 0 5px;
     }
 
+  }
+
+.wdpred__box-editor__sub-section {
+  margin-top: 20px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+}
+
+  .wdpred__box-editor__sub-section__title {
+    color: #d9d8dc;
+    font-size: 13px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
   }

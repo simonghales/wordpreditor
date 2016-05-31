@@ -2,22 +2,42 @@
   <div class="wdpred__box-editor">
     <header class="wdpred__box-editor__header">
       <ul class="wdpred__box-editor__tabs">
-        <li class="wdpred__tab wdpred__state--selected">
+        <li class="wdpred__tab"
+            ng-class="{
+              'wdpred__state--selected': boxEditorVM.tab === 'content'
+            }"
+            ng-click="boxEditorVM.selectTab('content')"
+          >
           <div>content</div>
         </li>
-        <li class="wdpred__tab">
+        <li class="wdpred__tab"
+            ng-class="{
+              'wdpred__state--selected': boxEditorVM.tab === 'layout'
+            }"
+            ng-click="boxEditorVM.selectTab('layout')"
+          >
           <div>layout</div>
         </li>
-        <li class="wdpred__tab">
+        <li class="wdpred__tab"
+            ng-class="{
+              'wdpred__state--selected': boxEditorVM.tab === 'styling'
+            }"
+            ng-click="boxEditorVM.selectTab('styling')"
+          >
           <div>styling</div>
         </li>
-        <li class="wdpred__tab">
+        <li class="wdpred__tab"
+            ng-class="{
+              'wdpred__state--selected': boxEditorVM.tab === 'extra'
+            }"
+            ng-click="boxEditorVM.selectTab('extra')"
+          >
           <div>extra</div>
         </li>
       </ul>
     </header>
     <div class="wdpred__box-editor__body">
-      <box-editor-tab-content></box-editor-tab-content>
+      <box-editor-tab tab="boxEditorVM.tab"></box-editor-tab>
     </div>
     <footer class="wdpred__box-editor__footer">
       <button class="wdpred__box-editor__atom-btn wdpred__btn wdpred__btn--mini-save">
