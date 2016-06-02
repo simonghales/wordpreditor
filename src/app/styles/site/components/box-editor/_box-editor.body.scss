@@ -1,7 +1,60 @@
 .wdpred__box-editor__body {
+}
+
+$wdpred__box-editor__body__tab-header--height: 30px;
+.wdpred__box-editor__body__tab-header {
+  @extend .clearfix;
+  height: $wdpred__box-editor__body__tab-header--height;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 0 4px;
+
+  .wdpred__tab {
+    color: #d9d8dc;
+    float: left;
+    line-height: $wdpred__box-editor__body__tab-header--height;
+    padding: 0 10px;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 5px;
+      height: 3px;
+      background-color: #616cff;
+      visibility: hidden;
+    }
+
+    &:hover {
+      color: #aaaaaa;
+    }
+
+    &.wdpred__state--selected {
+      color: #616cff;
+
+      &::after {
+        visibility: visible;
+      }
+
+    }
+
+  }
+
+}
+
+.wdpred__box-editor__body__tab-content {
   height: 280px;
   padding: 15px 10px;
   overflow-y: auto;
+
+  &.wdpred__box-editor__body__tab-content--styling {
+    height: 280px - $wdpred__box-editor__body__tab-header--height;
+  }
+
 }
 
 .wdpred__box-editor__option-container {
