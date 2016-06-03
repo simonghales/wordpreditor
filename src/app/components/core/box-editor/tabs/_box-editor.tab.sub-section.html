@@ -1,0 +1,13 @@
+<section class="wdpred__box-editor__sub-section">
+  <h3 class="wdpred__box-editor__sub-section__title"
+      ng-bind="::subSection.title"
+    ></h3>
+  <div class="wdpred__box-editor__option-container"
+       ng-class="{
+        'wdpred__box-editor__option-container--two': row.type === 'double'
+       }"
+       ng-repeat="row in ::subSection.rows"
+    >
+    <box-editor-tab-option ng-repeat="option in ::row.inputs"></box-editor-tab-option>
+  </div>
+</section>

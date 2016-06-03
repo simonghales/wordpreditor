@@ -3,13 +3,13 @@
 
   angular
     .module('wordpreditor.core')
-    .controller('BoxEditorController', BoxEditorController);
+    .controller('BoxEditorTabStylingController', BoxEditorTabStylingController);
 
   /** @ngInject */
-  function BoxEditorController() {
+  function BoxEditorTabStylingController() {
     var vm = this;
 
-    vm.tab = 'layout';
+    vm.tab = 'default';
 
     vm.selectTab = selectTab;
 

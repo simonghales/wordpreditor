@@ -1,8 +1,22 @@
-<div class="wdpred__box-editor__body__tab-content-wrapper">
+<div
+  ng-controller="BoxEditorTabStylingController as boxEditorTabContentVM"
+  class="wdpred__box-editor__body__tab-content-wrapper">
   <header class="wdpred__box-editor__body__tab-header">
-    <div class="wdpred__tab wdpred__state--selected">Default</div>
-    <div class="wdpred__tab">Hover</div>
-    <div class="wdpred__tab">Active</div>
+    <div class="wdpred__tab"
+         ng-class="{
+          'wdpred__state--selected': boxEditorTabContentVM.tab === 'default'
+         }"
+         ng-click="boxEditorTabContentVM.selectTab('default')">Default</div>
+    <div class="wdpred__tab"
+         ng-class="{
+          'wdpred__state--selected': boxEditorTabContentVM.tab === 'hover'
+         }"
+         ng-click="boxEditorTabContentVM.selectTab('hover')">Hover</div>
+    <div class="wdpred__tab"
+         ng-class="{
+          'wdpred__state--selected': boxEditorTabContentVM.tab === 'active'
+         }"
+         ng-click="boxEditorTabContentVM.selectTab('active')">Active</div>
   </header>
   <div class="wdpred__box-editor__body__tab-content wdpred__box-editor__body__tab-content--styling">
     <section class="wdpred__box-editor__sub-section">
