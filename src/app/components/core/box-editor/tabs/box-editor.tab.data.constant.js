@@ -17,7 +17,8 @@
                   'inputs': [
                     {
                       'label': 'Name',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': 'Awesome name thingy'
                     }
                   ]
                 },
@@ -27,7 +28,8 @@
                   'inputs': [
                     {
                       'label': 'Content Type',
-                      'type': 'text'
+                      'type': 'fixed',
+                      'value': ''
                     }
                   ]
                 },
@@ -37,7 +39,8 @@
                   'inputs': [
                     {
                       'label': 'Group Children',
-                      'type': 'text'
+                      'type': 'children',
+                      'value': ''
                     }
                   ]
                 }
@@ -56,11 +59,13 @@
                   'inputs': [
                     {
                       'label': 'Width',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Max Width',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': '410px'
                     }
                   ]
                 },
@@ -69,11 +74,13 @@
                   'inputs': [
                     {
                       'label': 'Height',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Max Height',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -88,11 +95,13 @@
                   'inputs': [
                     {
                       'label': 'Top',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Bottom',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -101,11 +110,13 @@
                   'inputs': [
                     {
                       'label': 'Left',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Right',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -120,7 +131,8 @@
                   'inputs': [
                     {
                       'label': 'Horizontal',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -129,7 +141,8 @@
                   'inputs': [
                     {
                       'label': 'Vertical',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -144,7 +157,8 @@
                   'inputs': [
                     {
                       'label': 'Number',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -153,7 +167,8 @@
                   'inputs': [
                     {
                       'label': 'Ratio',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -172,11 +187,13 @@
                   'inputs': [
                     {
                       'label': 'Color',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Gradient',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -185,7 +202,8 @@
                   'inputs': [
                     {
                       'label': 'Image',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -200,11 +218,13 @@
                   'inputs': [
                     {
                       'label': 'Top',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Bottom',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -213,11 +233,13 @@
                   'inputs': [
                     {
                       'label': 'Left',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Right',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -232,11 +254,13 @@
                   'inputs': [
                     {
                       'label': 'Top',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Bottom',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -245,11 +269,13 @@
                   'inputs': [
                     {
                       'label': 'Left',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Right',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -264,11 +290,13 @@
                   'inputs': [
                     {
                       'label': 'Top',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Bottom',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -277,11 +305,13 @@
                   'inputs': [
                     {
                       'label': 'Left',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Right',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -296,11 +326,13 @@
                   'inputs': [
                     {
                       'label': 'Top',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Bottom',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -309,11 +341,13 @@
                   'inputs': [
                     {
                       'label': 'Left',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Right',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }
@@ -328,11 +362,13 @@
                   'inputs': [
                     {
                       'label': 'Horizontal',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Vertical',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -341,11 +377,13 @@
                   'inputs': [
                     {
                       'label': 'Blur',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Spread',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 },
@@ -354,11 +392,13 @@
                   'inputs': [
                     {
                       'label': 'Color',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     },
                     {
                       'label': 'Inset',
-                      'type': 'text'
+                      'type': 'text',
+                      'value': ''
                     }
                   ]
                 }

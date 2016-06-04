@@ -2,9 +2,5 @@
   <label class="wdpred__box-editor__option__label"
          ng-bind="::option.label"
     ></label>
-  <div class="wdpred__box-editor__option__value">
-    <input
-      class="wdpred__input wdpred__input--basic"
-      type="text" />
-  </div>
+  <box-editor-input model="option.value" type="{{::option.type}}"></box-editor-input>
 </div>
