@@ -86,6 +86,22 @@ $wdpred__box-editor__body__tab-header--height: 30px;
 
   }
 
+  &.wdpred__box-editor__option-container--single {
+
+    .wdpred__box-editor__option__label {
+      min-width: 66px;
+    }
+
+  }
+
+  &.wdpred__box-editor__option-container--wider {
+
+    .wdpred__box-editor__option__label {
+      min-width: 100px;
+    }
+
+  }
+
 }
 
 .wdpred__box-editor__option {
@@ -130,6 +146,14 @@ $wdpred__box-editor__body__tab-header--height: 30px;
 
   &:first-of-type {
     margin-top: 0;
+  }
+
+  &.wdpred__box-editor__sub-section--plain {
+
+    .wdpred__box-editor__sub-section__title {
+      display: none;
+    }
+
   }
 
 }

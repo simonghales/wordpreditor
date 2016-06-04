@@ -6,8 +6,10 @@
     .controller('BoxEditorTabStylingController', BoxEditorTabStylingController);
 
   /** @ngInject */
-  function BoxEditorTabStylingController() {
+  function BoxEditorTabStylingController($log, BoxEditorTabData) {
     var vm = this;
+
+    vm.options = BoxEditorTabData['tabs']['styling'];
 
     vm.tab = 'default';
 

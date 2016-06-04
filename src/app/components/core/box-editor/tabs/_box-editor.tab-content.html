@@ -1,4 +1,7 @@
-<div class="wdpred__box-editor__body__tab-content wdpred__box-editor__body__tab-content--content">
+<div
+  ng-controller="BoxEditorTabContentController as boxEditorTabContentVM"
+  class="wdpred__box-editor__body__tab-content wdpred__box-editor__body__tab-content--content">
+  <box-editor-tab-sub-section ng-repeat="subSection in boxEditorTabContentVM.options.sections"></box-editor-tab-sub-section>
   <div class="wdpred__box-editor__option">
     <label class="wdpred__box-editor__option__label">Name</label>
     <div class="wdpred__box-editor__option__value">
