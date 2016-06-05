@@ -27,9 +27,20 @@
                   'classes': 'wdpred__box-editor__option-container--wider',
                   'inputs': [
                     {
+                      'label': 'Parent',
+                      'type': 'fixed',
+                      'value': 'unnamed_block_01'
+                    }
+                  ]
+                },
+                {
+                  'type': 'single',
+                  'classes': 'wdpred__box-editor__option-container--wider',
+                  'inputs': [
+                    {
                       'label': 'Content Type',
                       'type': 'fixed',
-                      'value': ''
+                      'value': 'Block'
                     }
                   ]
                 },
@@ -131,8 +142,30 @@
                   'inputs': [
                     {
                       'label': 'Horizontal',
-                      'type': 'text',
-                      'value': ''
+                      'type': 'radio',
+                      'value': '',
+                      'radio_options': [
+                        {
+                          'label': 'Auto',
+                          'selected': true,
+                          'value': 'auto'
+                        },
+                        {
+                          'label': 'Left',
+                          'selected': false,
+                          'value': 'left'
+                        },
+                        {
+                          'label': 'Center',
+                          'selected': false,
+                          'value': 'center'
+                        },
+                        {
+                          'label': 'Right',
+                          'selected': false,
+                          'value': 'right'
+                        }
+                      ]
                     }
                   ]
                 },
@@ -141,8 +174,30 @@
                   'inputs': [
                     {
                       'label': 'Vertical',
-                      'type': 'text',
-                      'value': ''
+                      'type': 'radio',
+                      'value': '',
+                      'radio_options': [
+                        {
+                          'label': 'Auto',
+                          'selected': true,
+                          'value': 'auto'
+                        },
+                        {
+                          'label': 'Left',
+                          'selected': false,
+                          'value': 'left'
+                        },
+                        {
+                          'label': 'Center',
+                          'selected': false,
+                          'value': 'center'
+                        },
+                        {
+                          'label': 'Right',
+                          'selected': false,
+                          'value': 'right'
+                        }
+                      ]
                     }
                   ]
                 }

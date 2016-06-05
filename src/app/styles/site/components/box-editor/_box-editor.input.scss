@@ -1,0 +1,61 @@
+.wdpred__box-editor__option__value {
+
+  &.wdpred__box-editor__option__value--radio {
+    @extend .clearfix;
+
+    .wdpred__box-editor__radio-btn {
+      float: left;
+      margin-right: 15px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+    }
+
+  }
+
+}
+
+.wdpred__box-editor__radio-btn {
+  cursor: pointer;
+  height: 24px;
+  color: #aaaaaa;
+
+  &:hover {
+    color: #888888;
+
+    .wdpred__box-editor__radio-btn__icon {
+      border-color: #999999;
+    }
+
+  }
+
+  &.wdpred__state--selected {
+    color: #666666;
+
+    .wdpred__box-editor__radio-btn__icon {
+      background-color: #616cff;
+      border-color: #616cff;
+    }
+
+  }
+
+}
+
+  .wdpred__box-editor__radio-btn__icon {
+    @include border-radius(50%);
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #e0e0e0;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+
+  }
+
+  .wdpred__box-editor__radio-btn__text {
+    display: inline-block;
+    line-height: 24px;
+  }

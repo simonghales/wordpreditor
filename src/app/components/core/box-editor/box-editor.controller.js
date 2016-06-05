@@ -9,7 +9,7 @@
   function BoxEditorController() {
     var vm = this;
 
-    vm.tab = 'content';
+    vm.tab = 'layout';
 
     vm.selectTab = selectTab;
 

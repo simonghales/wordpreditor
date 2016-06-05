@@ -11,7 +11,7 @@
       restrict: 'E',
       replace: true,
       scope: {
-        model: '=',
+        option: '=',
         type: '@'
       },
       link: link
@@ -28,6 +28,10 @@
         });
       } else if (type === 'fixed') {
         $templateRequest('app/components/core/box-editor/inputs/_box-editor.input-fixed.html').then(function(html) {
+          _insertTemplate(html)
+        });
+      } else if (type === 'radio') {
+        $templateRequest('app/components/core/box-editor/inputs/_box-editor.input-radio.html').then(function(html) {
           _insertTemplate(html)
         });
       } else {
