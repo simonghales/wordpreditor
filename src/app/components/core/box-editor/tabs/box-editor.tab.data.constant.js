@@ -71,12 +71,26 @@
                     {
                       'label': 'Width',
                       'type': 'text',
-                      'value': ''
+                      'value': '50',
+                      'valid': false,
+                      'unit_handler': true,
+                      'units': [
+                        'px',
+                        'em',
+                        '%'
+                      ]
                     },
                     {
                       'label': 'Max Width',
                       'type': 'text',
-                      'value': '410px'
+                      'value': '410px',
+                      'valid': true,
+                      'unit_handler': true,
+                      'units': [
+                        'px',
+                        'em',
+                        '%'
+                      ]
                     }
                   ]
                 },
@@ -86,12 +100,26 @@
                     {
                       'label': 'Height',
                       'type': 'text',
-                      'value': ''
+                      'value': '',
+                      'valid': true,
+                      'unit_handler': true,
+                      'units': [
+                        'px',
+                        'em',
+                        '%'
+                      ]
                     },
                     {
                       'label': 'Max Height',
                       'type': 'text',
-                      'value': ''
+                      'value': '',
+                      'valid': true,
+                      'unit_handler': true,
+                      'units': [
+                        'px',
+                        'em',
+                        '%'
+                      ]
                     }
                   ]
                 }
@@ -143,26 +171,22 @@
                     {
                       'label': 'Horizontal',
                       'type': 'radio',
-                      'value': '',
+                      'value': 'auto',
                       'radio_options': [
                         {
                           'label': 'Auto',
-                          'selected': true,
                           'value': 'auto'
                         },
                         {
                           'label': 'Left',
-                          'selected': false,
                           'value': 'left'
                         },
                         {
                           'label': 'Center',
-                          'selected': false,
                           'value': 'center'
                         },
                         {
                           'label': 'Right',
-                          'selected': false,
                           'value': 'right'
                         }
                       ]
@@ -175,27 +199,23 @@
                     {
                       'label': 'Vertical',
                       'type': 'radio',
-                      'value': '',
+                      'value': 'auto',
                       'radio_options': [
                         {
                           'label': 'Auto',
-                          'selected': true,
                           'value': 'auto'
                         },
                         {
-                          'label': 'Left',
-                          'selected': false,
-                          'value': 'left'
+                          'label': 'Top',
+                          'value': 'top'
                         },
                         {
                           'label': 'Center',
-                          'selected': false,
                           'value': 'center'
                         },
                         {
-                          'label': 'Right',
-                          'selected': false,
-                          'value': 'right'
+                          'label': 'Bottom',
+                          'value': 'bottom'
                         }
                       ]
                     }

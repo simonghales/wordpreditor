@@ -1,8 +1,9 @@
 <div class="wdpred__box-editor__option__value wdpred__box-editor__option__value--radio">
   <div class="wdpred__box-editor__radio-btn"
        ng-class="{
-        'wdpred__state--selected': input.selected
+        'wdpred__state--selected': option.value === input.value
        }"
+       ng-click="option.value = input.value"
        ng-repeat="input in ::option.radio_options">
     <div class="wdpred__box-editor__radio-btn__icon"></div>
     <div class="wdpred__box-editor__radio-btn__text" ng-bind="::input.label"></div>

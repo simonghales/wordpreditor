@@ -12,7 +12,8 @@
       replace: true,
       scope: {
         option: '=',
-        type: '@'
+        type: '@',
+        onBlur: '='
       },
       link: link
     };
